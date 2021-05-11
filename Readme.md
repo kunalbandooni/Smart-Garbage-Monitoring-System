@@ -35,3 +35,9 @@ ___
 
 ## Video Presentation
     https://drive.google.com/drive/folders/1QBlyoB27KsUcv8XBuUhNPk_sLzTirhll
+
+___
+
+**_JUST ME CHECKING MY CIRCUIT_**
+
+ <img src='Me.jpg'>
