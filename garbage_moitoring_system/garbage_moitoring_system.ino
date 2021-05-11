@@ -2,10 +2,10 @@
 #include<ESP8266WiFi.h>
 #include<BlynkSimpleEsp8266.h>
 
-char blynk_auth[] = "AawWDIkxreCFbwppLjqLMiEW-0xvaY5l";             // Blynk_Auth_Token
+char blynk_auth[] = "";             // Blynk_Auth_Token
 
-const char *ssid =  "JioFi2_CCFB01";                            // replace with your wifi ssid and wpa2 key
-const char *pass =  "ysi67zmi9k";
+const char *ssid =  "";                            // replace with your wifi ssid and wpa2 key
+const char *pass =  "";
 
 Servo s;
 
@@ -38,18 +38,18 @@ void setup()
             Serial.print(".");
       }
 
-      // Dustbin ON
-      lcd.clear();
-      lcd.print(4,0,"DUSTBIN");
-      lcd.print(3,1,"CONNECTED");
-      
       Serial.println("");
       Serial.println("WiFi connected");
       Serial.println("");
       
       Blynk.begin(blynk_auth,ssid,pass);
       Blynk.notify("NODEMCU Online");
-      Blynk.email("kbandooni1@gmail.com", "NODEMCU Online");                                                      
+      Blynk.email("kbandooni1@gmail.com", "NODEMCU Online");           
+      
+      // Dustbin ON
+      lcd.clear();
+      lcd.print(4,0,"DUSTBIN");
+      lcd.print(3,1,"CONNECTED");
       
       //Dustbin Initially empty
       t=0;
